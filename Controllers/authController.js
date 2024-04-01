@@ -1,5 +1,3 @@
-// backend/controllers/authController.js
-
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
 const jwtConfig = require('../Config/jwtConfig');
@@ -36,6 +34,5 @@ exports.login = async (req, res) => {
 };
 
 exports.logout = (req, res) => {
-  // Implement logout functionality here if needed
   res.json({ message: 'Logout successful' });
 };

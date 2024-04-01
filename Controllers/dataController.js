@@ -1,5 +1,3 @@
-// backend/controllers/dataController.js
-
 const axios = require('axios');
 
 exports.fetchData = async (req, res) => {
