@@ -27,6 +27,8 @@ npm start
 ```
 
 ## File structure
+
+```bash
 CarbonCell-Backend/
   |-- config/
   |-- controllers/
@@ -35,6 +37,8 @@ CarbonCell-Backend/
   |-- utils/
   |-- index.js
   |-- package.json
+  |-- .env
+```
 
 - config/: Contains configuration files, including Swagger configuration.
 - controllers/: Contains route handlers for different API endpoints.
