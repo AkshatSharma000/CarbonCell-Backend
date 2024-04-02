@@ -24,7 +24,7 @@ git clone [https://github.com/your-username/crypto-backend.git](https://github.c
 cd CarbonCell-Backend
 npm install
 npm start
-```bash
+```
 
 ## File structure
 CarbonCell-Backend/
