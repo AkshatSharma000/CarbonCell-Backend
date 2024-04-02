@@ -20,7 +20,7 @@ This is the backend for the Crypto web application. It provides API endpoints fo
 To get started with the Crypto backend, follow these steps:
 
 ```bash
-git clone [https://github.com/your-username/crypto-backend.git](https://github.com/AkshatSharma000/CarbonCell-Backend.git)
+git clone [https://github.com/AkshatSharma000/CaronCell-Backend.git](https://github.com/AkshatSharma000/CarbonCell-Backend.git)
 cd CarbonCell-Backend
 npm install
 npm start
