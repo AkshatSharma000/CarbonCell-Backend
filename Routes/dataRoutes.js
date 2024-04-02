@@ -28,6 +28,6 @@ const authMiddleware = require('../Middleware/authMiddleware');
  *       '500':
  *         description: Internal server error
  */
-router.get('/data', authMiddleware, dataController.fetchData);
+router.get('/', authMiddleware, dataController.fetchData);
 
 module.exports = router;
