@@ -1,5 +1,5 @@
 module.exports = {
-    secretKey: 'HelloWorldWorldHello',
+    secretKey: process.env.JWT_SECRET,
     expiresIn: '1h'
   };
   

@@ -7,10 +7,12 @@ const dataRoutes = require('./Routes/dataRoutes');
 const errorHandler = require('./Utils/errorHandler');
 const { swaggerUi, specs } = require('./Config/swaggerConfig');
 
-const app = express();
-const PORT = process.env.PORT || 4242;
+require('dotenv').config();
 
-mongoose.connect('mongodb+srv://akshatsharma24k:akshat@cluster0.zpqbsxj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
+const app = express();
+const PORT = process.env.PORT || 3001;
+
+mongoose.connect(process.env.MONGODB_URI, {
 }).then(() => {
   console.log('MongoDB connected');
 }).catch(err => {
@@ -25,7 +27,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/data', dataRoutes);
 
 // Swagger UI
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
+app.use('/', swaggerUi.serve, swaggerUi.setup(specs));
 
 // Error handler middleware
 app.use(errorHandler);
