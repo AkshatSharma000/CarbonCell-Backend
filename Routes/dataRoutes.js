@@ -7,8 +7,8 @@ const authMiddleware = require('../Middleware/authMiddleware');
  * @swagger
  * /api/data:
  *   get:
- *     summary: Get data from public API
- *     description: Fetch data from a public API with optional filtering options
+ *     summary: Get data from public API [Authorization required]
+ *     description: Fetch data from a public API with optional filtering options. This is a protected Route.
  *     parameters:
  *       - in: query
  *         name: category
