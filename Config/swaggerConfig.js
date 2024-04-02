@@ -12,6 +12,10 @@ const options = {
     servers: [
       {
         url: 'http://localhost:3000',
+        description: 'Local server'
+      },
+      {
+        url: 'https://carboncell-backend-ijz5.onrender.com/',
         description: 'Development server'
       }
     ]
